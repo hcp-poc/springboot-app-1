@@ -16,8 +16,6 @@ COPY src ./src
 
 # Build JAR
 RUN mvn clean package -DskipTests
-
-
 # =========================
 # Stage 2: Runtime
 # =========================
