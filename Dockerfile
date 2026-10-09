@@ -14,7 +14,7 @@ RUN mvn dependency:go-offline -B
 # Copy application source
 COPY src ./src
 
-# Build JAR
+# Build JAR with java21
 RUN mvn clean package -DskipTests
 # =========================
 # Stage 2: Runtime
